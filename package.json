@@ -1,7 +1,7 @@
 {
-  "name": "express-webpack-react",
+  "name": "websockets-express-react",
   "version": "0.0.1",
-  "description": "Express Webpack React Starter Template",
+  "description": "Socket.IO Express React Webpack Starter Kit",
   "main": "server.js",
   "scripts": {
     "build": "webpack --display-chunks --progress",
@@ -12,20 +12,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tylerevans/express-webpack-react"
+    "url": "https://github.com/tylerevans/websockets-express-react"
   },
   "keywords": [
     "Express",
     "React",
     "Template",
-    "Starter"
+    "Starter",
+    "Socket.IO"
   ],
   "author": "Tyler Evans <teva995@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tylerevans/express-webpack-react/issues"
+    "url": "https://github.com/tylerevans/websockets-express-react/issues"
   },
-  "homepage": "https://github.com/tylerevans/express-webpack-react#readme",
+  "homepage": "https://github.com/tylerevans/websockets-express-react#readme",
   "devDependencies": {
     "assets-webpack-plugin": "^3.4.0",
     "autoprefixer": "^6.4.1",
@@ -64,6 +65,7 @@
     "hbs-utils": "0.0.3",
     "jquery": "^2.1.4",
     "react": "^15.3.1",
-    "react-dom": "^15.3.1"
+    "react-dom": "^15.3.1",
+    "socket.io": "^1.4.8"
   }
 }

@@ -1,6 +1,6 @@
 # express-webpack-react Starter Kit
 
-Starter Kit for Express Webpack and React SPA including SCSS.
+Starter Kit for Express Webpack and React SPA including SCSS and Websocket.
 
   - Express
   - Handlebars
@@ -10,6 +10,7 @@ Starter Kit for Express Webpack and React SPA including SCSS.
   - SCSS
   - ESlint using Airbnb Configuration.
   - Asset Fingerprinting
+  - WebSocket.IO
 
 Entry point for Webpack is:
 

@@ -7,6 +7,8 @@ var hbsutils = require("hbs-utils")(hbs);
 var compress = require("compression");
 
 var app = express();
+var http = require("http").Server(app);
+var io = require('socket.io')(http);
 
 global.__root = __dirname + "/"; // eslint-disable-line
 
@@ -31,10 +33,10 @@ app.disable("x-powered-by");
 // =======================
 // Routes
 // =======================
-require(__root + "node_scripts/routes/routes").routes(app); // eslint-disable-line
+require(__root + "node_scripts/routes/routes").routes(app, http, io); // eslint-disable-line
 
 // =======================
 // Launch Application
 // =======================
 var PORT = 3010;
-app.listen(PORT);
+http.listen(PORT);
