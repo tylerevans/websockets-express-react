@@ -14,7 +14,6 @@ $(document).ready(function () {
 	}
 
 	var socket = io.connect();
-	console.log(socket);
 
 	socket.emit('chat message', 'yo whatsup');
 });
